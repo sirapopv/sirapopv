@@ -15,11 +15,19 @@ Automatically convert YouTube videos into podcast-style videos with translated a
 4. Enter your API key (one time)
 5. Start converting videos!
 
-#### ⚠️ Setup Issues? Terminal Closes Instantly?
-- **First, run:** `DIAGNOSE.bat` - Finds the problem
-- **Then, run:** `SETUP-SIMPLE.bat` - Clearer error messages
-- **Read:** `INSTALLATION_HELP.txt` - Step-by-step fixes
-- **Check:** [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Complete guide
+#### ⚠️ Common Windows Issues?
+
+**"Failed building wheel for Pillow" or "FAILED: streamlit":**
+1. **Quick Fix:** Run `FIX-ALL-WINDOWS.bat`
+2. **Complete Fix:** Install [Visual C++ Build Tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+3. **Guide:** Read `WINDOWS-BUILD-ERROR.txt`
+
+**Terminal closes instantly:**
+- Run `DIAGNOSE.bat` - Finds the problem
+- Run `SETUP-SIMPLE.bat` - Clearer error messages
+- Read `INSTALLATION_HELP.txt` - Step-by-step fixes
+
+**All Issues:** [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
 ### Mac/Linux:
 ```bash

@@ -1,0 +1,26 @@
+# Flexible requirements (no specific versions)
+# Use this if requirements.txt fails
+
+# YouTube transcript extraction
+youtube-transcript-api
+yt-dlp
+
+# Google Gemini API
+google-generativeai
+
+# Text-to-Speech
+gtts
+
+# Video processing (often causes issues on Windows)
+Pillow
+
+# Configuration
+pyyaml
+python-dotenv
+
+# CLI
+click
+rich
+
+# Web Interface
+streamlit

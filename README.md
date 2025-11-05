@@ -9,6 +9,8 @@ Automatically convert YouTube videos into podcast-style videos with translated a
 - 🎙️ Generate audio narration (Thai & English support)
 - 🖼️ Create custom thumbnails automatically
 - 📹 Combine into professional podcast videos
+- 🌐 **Easy-to-use Web Interface**
+- 💾 **Persistent settings** (API keys, style instructions, sample scripts)
 - ⚙️ Highly configurable via YAML
 
 ## How It Works
@@ -55,14 +57,37 @@ Automatically convert YouTube videos into podcast-style videos with translated a
 
 ## Usage
 
-### Basic Usage
+### 🌐 Web Interface (Recommended)
+
+The easiest way to use the converter is through the web interface:
 
 ```bash
-python main.py "https://www.youtube.com/watch?v=VIDEO_ID"
+# Run the web interface
+./run_web.sh
+
+# Or manually:
+streamlit run app.py
 ```
 
-### Advanced Options
+Then open your browser to `http://localhost:8501`
 
+**Web Interface Features:**
+- ✅ Enter and save your Google AI Studio API key securely
+- ✅ Add and save custom style instructions for translation
+- ✅ Upload and save sample scripts to match your preferred style
+- ✅ All settings are saved automatically
+- ✅ Easy-to-use interface with progress tracking
+- ✅ Download generated videos, audio, and thumbnails directly
+
+### 💻 Command Line Interface
+
+You can also use the CLI for automation:
+
+```bash
+# Basic usage
+python main.py "https://www.youtube.com/watch?v=VIDEO_ID"
+
+# Advanced options
 ```bash
 # Specify language
 python main.py "URL" --language Thai

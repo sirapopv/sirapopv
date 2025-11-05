@@ -1,0 +1,159 @@
+========================================
+  INSTALLATION HELP
+  For "Terminal Closes Instantly" Issue
+========================================
+
+If SETUP.bat closes immediately after "press any key",
+this means Python is either:
+1. Not installed
+2. Not in PATH (Windows can't find it)
+
+========================================
+QUICK FIX - 3 STEPS:
+========================================
+
+STEP 1: Run Diagnostic
+-----------------------
+Double-click:  DIAGNOSE.bat
+
+This will tell you EXACTLY what's wrong.
+The window will NOT close automatically.
+
+
+STEP 2: Fix the Issue
+-----------------------
+Most likely you need to install Python:
+
+1. Go to: https://www.python.org/downloads/
+
+2. Download Python (latest version)
+
+3. Run installer
+
+4. CRITICAL: Check the box that says:
+   "Add Python to PATH"
+
+5. Click "Install Now"
+
+6. RESTART your computer after installation
+
+
+STEP 3: Run Simple Setup
+--------------------------
+After fixing Python, double-click:
+
+  SETUP-SIMPLE.bat
+
+This version:
+- Shows progress clearly
+- Window stays open
+- Shows exactly where errors happen
+- Gives solutions for each error
+
+
+========================================
+ALTERNATIVE: Manual Installation
+========================================
+
+If automated setup keeps failing:
+
+1. Open Command Prompt in project folder:
+   - Hold Shift + Right-click in folder
+   - Select "Open PowerShell window here"
+     or "Open command window here"
+
+2. Type these commands ONE AT A TIME:
+
+python --version
+(Should show: Python 3.x.x)
+
+python -m venv venv
+
+venv\Scripts\activate
+
+python -m pip install --upgrade pip
+
+pip install youtube-transcript-api
+pip install yt-dlp
+pip install google-generativeai
+pip install gtts
+pip install Pillow
+pip install pyyaml
+pip install python-dotenv
+pip install click
+pip install rich
+pip install streamlit
+
+mkdir output
+mkdir settings
+
+
+3. If successful, you can now run START.bat
+
+
+========================================
+STILL NOT WORKING?
+========================================
+
+Try these in order:
+
+1. Run DIAGNOSE.bat
+   - Shows exactly what's wrong
+   - Window stays open
+
+2. Install Python properly
+   - Must check "Add to PATH"
+   - Restart computer after
+
+3. Run SETUP-SIMPLE.bat
+   - Clearer error messages
+   - Window stays open
+
+4. Try SETUP-ALTERNATIVE.bat
+   - Installs packages one by one
+   - Shows which specific package fails
+
+5. Check TROUBLESHOOTING.md
+   - Complete guide for all issues
+
+6. Manual installation (steps above)
+
+
+========================================
+COMMON CAUSES & FIXES:
+========================================
+
+Cause: Python not installed
+Fix: Install from python.org
+
+Cause: Python installed but PATH not set
+Fix: Reinstall Python, check "Add to PATH"
+
+Cause: Running wrong script
+Fix: Run DIAGNOSE.bat first
+
+Cause: Running from wrong folder
+Fix: Make sure you're in project folder
+     (should have requirements.txt)
+
+Cause: No internet connection
+Fix: Connect to internet
+
+Cause: Antivirus blocking
+Fix: Temporarily disable antivirus
+
+Cause: No write permissions
+Fix: Run as Administrator
+     (Right-click script -> Run as Administrator)
+
+
+========================================
+NEED MORE HELP?
+========================================
+
+1. Run DIAGNOSE.bat and tell me what it says
+2. Take a screenshot of any error
+3. Check TROUBLESHOOTING.md for detailed solutions
+
+
+Good luck!

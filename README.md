@@ -15,6 +15,12 @@ Automatically convert YouTube videos into podcast-style videos with translated a
 4. Enter your API key (one time)
 5. Start converting videos!
 
+#### ⚠️ Setup Issues? Terminal Closes Instantly?
+- **First, run:** `DIAGNOSE.bat` - Finds the problem
+- **Then, run:** `SETUP-SIMPLE.bat` - Clearer error messages
+- **Read:** `INSTALLATION_HELP.txt` - Step-by-step fixes
+- **Check:** [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Complete guide
+
 ### Mac/Linux:
 ```bash
 ./SETUP-LINUX.sh  # First time only

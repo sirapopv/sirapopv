@@ -11,7 +11,23 @@ Automatically convert YouTube videos into podcast-style videos with translated a
 - 📹 Combine into professional podcast videos
 - 🌐 **Easy-to-use Web Interface**
 - 💾 **Persistent settings** (API keys, style instructions, sample scripts)
+- 🚀 **Deploy to your website** (Docker, Railway, Render, VPS)
+- 🔒 **Optional password protection** for public deployment
 - ⚙️ Highly configurable via YAML
+
+## 🌐 Deploy to Your Website
+
+Want to use this on your website instead of locally?
+
+**Quick Deploy:** [DEPLOY_QUICK.md](DEPLOY_QUICK.md) - Get online in 5 minutes!
+
+**Deployment Options:**
+- **Railway.app** (Easiest) - One-click deploy, ~$5/month
+- **Render.com** (Free tier) - Free with limitations
+- **VPS** (Full control) - $4-12/month with automated setup script
+- **Docker** (Any server) - Self-hosted with Docker Compose
+
+**Full Guide:** [DEPLOYMENT.md](DEPLOYMENT.md) - Comprehensive deployment documentation
 
 ## How It Works
 

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  youtube-converter:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount output directory to persist generated files
+      - ./output:/app/output
+      # Mount settings directory to persist user settings
+      - ./settings:/app/settings
+    environment:
+      # Optional: Set default environment variables
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+    restart: unless-stopped
+    container_name: youtube-podcast-converter

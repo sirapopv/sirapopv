@@ -1,0 +1,19 @@
+[server]
+# Production server settings
+port = 8501
+address = "0.0.0.0"
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+# Automatically open browser (disable for production)
+gatherUsageStats = false
+
+[theme]
+# Custom theme
+primaryColor = "#00D4FF"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#1E2127"
+textColor = "#FAFAFA"
+font = "sans serif"

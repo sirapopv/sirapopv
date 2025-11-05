@@ -1,0 +1,52 @@
+# YouTube Video Converter Configuration
+
+# Default settings
+default_language: "Thai"
+output_directory: "output"
+
+# Gemini API settings
+gemini:
+  model: "gemini-2.0-flash-exp"  # For text generation
+  vision_model: "gemini-2.0-flash-exp"  # For understanding video content
+
+# Translation settings
+translation:
+  style_instructions: |
+    Translate the content naturally and engagingly for Thai podcast listeners.
+    Make it conversational and easy to understand.
+    Maintain the key information and insights from the original.
+
+  # You can add your script example here later
+  script_example: ""
+
+# Content generation settings
+content_generation:
+  title_prompt: |
+    Create an engaging Thai YouTube title (60 characters max) for a podcast based on this content.
+    Make it catchy and clickable while accurately representing the topic.
+
+  description_prompt: |
+    Write a compelling Thai YouTube description for this podcast.
+    Include:
+    - Brief overview (2-3 sentences)
+    - Key topics covered (bullet points)
+    - Call to action for likes and subscriptions
+
+# Audio settings
+audio:
+  voice: "en-US-Studio-O"  # Gemini TTS voice (you can change this)
+  speaking_rate: 1.0
+  pitch: 0.0
+
+# Image settings
+image:
+  width: 1280
+  height: 720
+  style: "podcast cover art, professional, modern, clean design"
+
+# Video settings
+video:
+  fps: 1  # Frames per second (1 is enough for static image with audio)
+  audio_codec: "aac"
+  video_codec: "libx264"
+  output_format: "mp4"

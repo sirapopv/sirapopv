@@ -2,6 +2,29 @@
 
 Automatically convert YouTube videos into podcast-style videos with translated audio and custom thumbnails.
 
+**🖥️ Runs on YOUR PC with a simple graphical interface - No technical knowledge required!**
+
+---
+
+## 🚀 Quick Start (Use on Your PC)
+
+### Windows:
+1. Download this project
+2. Double-click **`SETUP.bat`** (first time only)
+3. Double-click **`START.bat`** to launch
+4. Enter your API key (one time)
+5. Start converting videos!
+
+### Mac/Linux:
+```bash
+./SETUP-LINUX.sh  # First time only
+./START.sh        # Launch app
+```
+
+**📖 Full PC Guide:** [PC_SETUP_GUIDE.md](PC_SETUP_GUIDE.md)
+
+---
+
 ## Features
 
 - 🎥 Extract transcripts from YouTube videos
